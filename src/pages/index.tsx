@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
       numberPosts,
       allTags,
     },
-    revalidate: 60 * 60 * 6,
+    revalidate: 10,
   };
 };
 
