@@ -1,6 +1,4 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Paginations from "../../../../../components/Pagination/Paginations";
 
 import SinglePost from "../../../../../components/Post/SinglePost";
@@ -12,7 +10,6 @@ import {
   getPostsByTagPage,
   getPostsForTopPage,
 } from "../../../../../../lib/notionAPI";
-import { Pagination } from "swiper";
 import Tag from "../../../../../components/Tag/Tag";
 
 export const getStaticPaths: GetStaticPaths = async () => {
